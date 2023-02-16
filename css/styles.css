@@ -272,7 +272,7 @@ ul {
 
 }
 .form-footer-email{
-  border: 1px solid rgba(255, 255, 255, 0.3);
+border: 1px solid rgba(255, 255, 255, 0.3);
 background-color: transparent;
 width: 358px;
 height: 50px;
@@ -740,7 +740,7 @@ display: flex;
   color: #757575;
   align-items: center;
 }
-.label-checkbox::before {
+.label-checkbox {
   content: "";
   display: inline-block;
   width: 16px;
