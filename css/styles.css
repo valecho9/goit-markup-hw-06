@@ -253,9 +253,7 @@ ul {
 }
 
 .form-footer {
-  width: 570px;
-  height: 86px;
-  margin-left: 93px;
+  margin-left: auto;
 }
 .form-footer-title {
   color: var(--accent-color);
@@ -264,8 +262,8 @@ ul {
   line-height: 1.14;
   margin-bottom: 20px;
 }
-.form-footer-label {
-}
+/*.form-footer-label {
+}*/
 .form-footer-email {
   border: 1px solid rgba(255, 255, 255, 0.3);
   background-color: transparent;
@@ -276,8 +274,8 @@ ul {
   padding-top: 15px;
   padding-bottom: 15px;
 }
-.form-footer-email::placeholder {
-}
+/*.form-footer-email::placeholder {
+}*/
 .form-footer-button {
   width: 200px;
   height: 50px;
@@ -285,6 +283,7 @@ ul {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   border: none;
+  margin-right: auto;
 }
 .form-footer-button-text {
   font-weight: 700;
@@ -650,8 +649,8 @@ ul {
   pointer-events: none;
 }
 /*---===modal-form===---*/
-.form {
-}
+/*.form {
+}*/
 .subtitle-form {
   font-weight: 700;
   font-size: 20px;
@@ -669,7 +668,6 @@ ul {
 }
 .contact-form {
   display: block;
-  margin-bottom: 20px;
 }
 .contact-form-input {
   width: 100%;
@@ -706,35 +704,42 @@ ul {
   padding: 12px 16px;
   resize: none;
   cursor: pointer;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .contact-form-message::placeholder {
   font-size: 12px;
-
   color: rgba(117, 117, 117, 0.5);
 }
 .contact-form-message:focus {
   border-color: var(--text-color);
 }
-.form-checkbox {
-  
-}
+/*.form-checkbox {
+}*/
 .label-checkbox {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+  margin-bottom: 30px;
 }
-.checkbox-icon:checked + .label-checkbox {
+.input-checkbox:checked + .checkbox-icon {
   background-color: var(--text-color);
   border: none;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.input-checkbox {
-}
+/*.input-checkbox {
+}*/
 .checkbox-icon {
   width: 16px;
   height: 15px;
   border: 2px solid var(--primary-text-color);
   border-radius: 2px;
   cursor: pointer;
+  margin-right: 7px;
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 .form-checkbox-text {
   font-size: 14px;
@@ -749,6 +754,9 @@ ul {
   border-radius: 4px;
   font-weight: 700;
   border: none;
+  display: block;
+  margin: 0 auto;
+  cursor: pointer;
 }
 .form-btn-text {
   font-weight: 700;
