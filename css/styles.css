@@ -284,6 +284,7 @@ ul {
   background-color: #2196f3;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
+  border: none;
 }
 .form-footer-button-text {
   font-weight: 700;
@@ -668,7 +669,7 @@ ul {
 }
 .contact-form {
   display: block;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
 .contact-form-input {
   width: 100%;
@@ -715,21 +716,11 @@ ul {
   border-color: var(--text-color);
 }
 .form-checkbox {
-display: flex;
-align-items: center;
-margin-left: 52px;
+  
 }
 .label-checkbox {
-  width: 16px;
-  height: 15px;
-  border: 2px solid var(--primary-text-color);
-  border-radius: 2px;
-  cursor: pointer;
-  margin-right: 7px;
-  display: flex;
-  align-items: center;
 }
-.input-checkbox:checked + .label-checkbox {
+.checkbox-icon:checked + .label-checkbox {
   background-color: var(--text-color);
   border: none;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -737,10 +728,13 @@ margin-left: 52px;
 .input-checkbox {
 }
 .checkbox-icon {
+  width: 16px;
+  height: 15px;
+  border: 2px solid var(--primary-text-color);
+  border-radius: 2px;
+  cursor: pointer;
   display: flex;
   align-items: center;
-  justify-content: center;
-  text-align:center;
 }
 .form-checkbox-text {
   font-size: 14px;
@@ -755,7 +749,6 @@ margin-left: 52px;
   border-radius: 4px;
   font-weight: 700;
   border: none;
-  margin-top: 30px;
 }
 .form-btn-text {
   font-weight: 700;
